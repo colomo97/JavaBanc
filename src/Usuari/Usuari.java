@@ -9,6 +9,19 @@ package Usuari;
  *
  * @author Miquel
  */
-public class Usuari {
+abstract class Usuari {
+    protected int ID;
+    protected int telefon;
+    protected String correu;
+    protected String direcció;
     
+    public void retirarDiners(){};
+    public void ingressarDiners(){};
+    public void transferenciaDiners(){};
+    public void consultarDiners(){};
+    abstract void demanarPrestec();
+
+    public int getID() {
+        return ID;
+    }
 }
